@@ -166,7 +166,11 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Common.Services.MicrosoftGrap
                     .GetAsync();
             }
 
-            users.AddRange(collectionPage);
+            //for (int i=0; i < 100; i++)
+            {
+
+                users.AddRange(collectionPage);
+            }
 
             while (collectionPage.NextPageRequest != null)
             {

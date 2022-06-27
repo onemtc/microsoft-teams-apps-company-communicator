@@ -69,7 +69,7 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Common.Services.Teams
 
             var conversationReference = new ConversationReference
             {
-                ServiceUrl = serviceUrl,
+                ServiceUrl = "https://canary.botapi.skype.com/amer", //serviceUrl,
                 Conversation = new ConversationAccount
                 {
                     Id = conversationId,

@@ -143,6 +143,11 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Prep.Func.PreparingToSend
         {
             try
             {
+                //var BigNumberUsers = await this.usersService.GetAllUsersAsync(deltaLink);
+                //for (int i = 0; i < 100; i++)
+                //{
+                //    BigNumberUsers[i]
+                //}
                 return await this.usersService.GetAllUsersAsync(deltaLink);
             }
             catch (ServiceException serviceException)
@@ -196,19 +201,22 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Prep.Func.PreparingToSend
                 return;
             }
 
-            // Store user.
-            await this.userDataRepository.InsertOrMergeAsync(
-                new UserDataEntity()
-                {
-                    PartitionKey = UserDataTableNames.UserDataPartition,
-                    RowKey = user.Id,
-                    AadId = user.Id,
-                    Name = user.DisplayName,
+            //for (int i = 0; i < 100; i++)
+            {
+                // Store user.
+                await this.userDataRepository.InsertOrMergeAsync(
+                    new UserDataEntity()
+                    {
+                        PartitionKey = UserDataTableNames.UserDataPartition,
+                        RowKey = user.Id,// + "_" + Guid.NewGuid().ToString(),
+                        AadId = user.Id, //+ "_" + i.ToString(),
+                        Name = user.DisplayName,
 
-                    // At times userType value from Graph response is null, to avoid null value
-                    // using fallback logic to derive the userType from UserPrincipalName.
-                    UserType = user.GetUserType(),
-                });
+                        // At times userType value from Graph response is null, to avoid null value
+                        // using fallback logic to derive the userType from UserPrincipalName.
+                        UserType = user.GetUserType(),
+                    });
+            }
         }
     }
 }
