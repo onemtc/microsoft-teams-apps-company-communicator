@@ -1,7 +1,19 @@
 # Company Communicator App Template - MTC Version
 
-| [Documentation](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki) | [Deployment guide](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide) | [Deployment guide powershell](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Deployment-guide-powershell)  | [Architecture](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/wiki/Solution-overview) |
-| ---- | ---- | ---- | ---- |
+Additional features:
+* @mention support for personal messages
+* Stage view for video and SharePoint Online pages
+* New UX for inline translation
+* Custom Adaptive Card support
+* On behalf of, rich text formatting with a full width support
+* Poll & mini-quiz support
+* Reaction tracking
+* Image Upload
+* Scheduler
+* Custom recipients list support
+
+### Repository is no longer maintained. Feel free to contact the owner at https://www.linkedin.com/in/bondarevsky/
+
 
 Company Communicator is a custom Teams app that enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate. Use this template for multiple scenarios, such as new initiative announcements, employee onboarding, modern learning and development, or organization-wide broadcasts. 
 
