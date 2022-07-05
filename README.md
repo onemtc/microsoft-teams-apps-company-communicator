@@ -7,7 +7,7 @@ Additional features:
 * Custom Adaptive Card support
 * On behalf of, rich text formatting with a full width support
 * Poll & mini-quiz support
-* Reaction tracking
+* View/Click/Ackgnowledgement and Reaction tracking
 * Image Upload
 * Scheduler
 * Custom recipients list support
