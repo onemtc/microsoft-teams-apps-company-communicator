@@ -12,7 +12,7 @@ Additional features:
 * Scheduler
 * Custom recipients list support
 
-### Repository is no longer maintained. Feel free to contact the owner at https://www.linkedin.com/in/bondarevsky/
+### Repository is no longer maintained. For the lates news feel free to contact the owner at https://www.linkedin.com/in/bondarevsky/
 
 
 Company Communicator is a custom Teams app that enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate. Use this template for multiple scenarios, such as new initiative announcements, employee onboarding, modern learning and development, or organization-wide broadcasts. 
